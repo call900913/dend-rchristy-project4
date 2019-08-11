@@ -1,5 +1,7 @@
-
-
+install:
+	# This should be run from inside a virtualenv
+	pip install --upgrade pip &&\
+		pip install -r requirements.txt
 
 lint:
 	# (https://s3.amazonaws.com/video.udacity-data.com/topher/2019/May/5cda0d76_config/config.yml)
