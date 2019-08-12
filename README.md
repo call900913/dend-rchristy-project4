@@ -9,9 +9,7 @@ The Machine Learning app in question itself is an app that serves out prediction
 ## Table of Contents
 
 • [Notes and Prerequisites](#notes-and-prerequisites)
-
 • [Files in the Repository](#files-in-the-repository)
-
 • [Instructions](#instructions)
 
 
