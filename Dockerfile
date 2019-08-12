@@ -1,3 +1,4 @@
+# This file defines the Docker image to be used in the project.
 FROM python:3.7.3-stretch
 
 WORKDIR /app
