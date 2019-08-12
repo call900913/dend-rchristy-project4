@@ -5,6 +5,7 @@
 docker build --tag=api .
 
 # List docker images
+echo 'List of Docker images:'
 docker image ls
 
 # Run app

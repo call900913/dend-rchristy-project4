@@ -5,7 +5,7 @@ dockerpath=call900913/api
 echo "Docker ID and Image: $dockerpath"
 
 # Authenticate
-docker login --username=call900913 --password=e,wqj}4CR\5viM{{_/L(
+docker login --username=call900913 --password='e,wqj}4CR\5viM{{_/L('
 
 # Tag
 docker tag bb9de27ee348 call900913/api:v1
