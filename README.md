@@ -66,12 +66,14 @@ git clone https://github.com/call900913/dend-rchristy-project4.git
 cd dend-rchristy-project4
 ```
 
-2. Run `make install` on the Terminal.
-
-3. Activate the virtual environment with this command:
+2. Create Activate the virtual environment with these commands:
 ```
+python3 -m venv .devops
+
 source .devops/bin/activate
 ```
+
+3. Run `make install` on the Terminal.
 
 4. Start Docker build by running the following command:
 ```
