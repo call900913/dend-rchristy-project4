@@ -1,0 +1,6 @@
+deployment.apps/klm created
+
+NAME                   READY     STATUS    RESTARTS   AGE
+klm-579789f455-gg4mn   1/1       Running   0          39m
+
+Starting to serve on 127.0.0.1:8000
