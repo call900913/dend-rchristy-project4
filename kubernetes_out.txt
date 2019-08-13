@@ -1,27 +1,19 @@
-deployment.apps/klm created
+127.0.0.1 - - [13/Aug/2019 16:40:13] "GET / HTTP/1.1" 200 -
+[2019-08-13 16:40:45,679] INFO in app: JSON payload:
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2019-08-13 16:40:45,691] INFO in app: Inference payload DataFrame:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2019-08-13 16:40:45,700] INFO in app: Scaling Payload:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2019-08-13 16:40:45,703] INFO in app: Prediction: 20.35373177134412
+127.0.0.1 - - [13/Aug/2019 16:40:45] "POST /predict HTTP/1.1" 200 -
 
-NAME                   READY     STATUS    RESTARTS   AGE
-klm-579789f455-gg4mn   1/1       Running   0          39m
-
-Starting to serve on 127.0.0.1:8000
-
------Output of running `./make_predictions.sh` in another window-----
+./make_kubernetes.sh output:
 Port: 8000
 {
-  "paths": [
-    "/apis",
-    "/apis/",
-    "/apis/apiextensions.k8s.io",
-    "/apis/apiextensions.k8s.io/v1beta1",
-    "/healthz",
-    "/healthz/etcd",
-    "/healthz/log",
-    "/healthz/ping",
-    "/healthz/poststarthook/crd-informer-synced",
-    "/healthz/poststarthook/generic-apiserver-start-informers",
-    "/healthz/poststarthook/start-apiextensions-controllers",
-    "/healthz/poststarthook/start-apiextensions-informers",
-    "/metrics",
-    "/openapi/v2",
-    "/version"
+  "prediction": [
+    20.35373177134412
   ]
+}
