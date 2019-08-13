@@ -1,19 +1,19 @@
-[2019-08-11 16:55:59,365] INFO in app: JSON payload: 
+[2019-08-13 13:52:36,948] INFO in app: JSON payload:
 {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
-[2019-08-11 16:55:59,376] INFO in app: Inference payload DataFrame: 
+[2019-08-13 13:52:36,959] INFO in app: Inference payload DataFrame:
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-[2019-08-11 16:55:59,384] INFO in app: Scaling Payload: 
+[2019-08-13 13:52:36,966] INFO in app: Scaling Payload:
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-172.17.0.1 - - [11/Aug/2019 16:55:59] "POST /predict HTTP/1.1" 200 -
-172.17.0.1 - - [11/Aug/2019 16:56:21] "GET / HTTP/1.1" 200 -
-[2019-08-11 16:56:26,233] INFO in app: JSON payload: 
-{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
-[2019-08-11 16:56:26,242] INFO in app: Inference payload DataFrame: 
-   CHAS     RM    TAX  PTRATIO      B  LSTAT
-0     0  6.575  296.0     15.3  396.9   4.98
-[2019-08-11 16:56:26,250] INFO in app: Scaling Payload: 
-   CHAS     RM    TAX  PTRATIO      B  LSTAT
-0     0  6.575  296.0     15.3  396.9   4.98
-172.17.0.1 - - [11/Aug/2019 16:56:26] "POST /predict HTTP/1.1" 200 -
+[2019-08-13 13:52:36,968] INFO in app: Prediction: 20.35373177134412
+172.17.0.1 - - [13/Aug/2019 13:52:36] "POST /predict HTTP/1.1" 200 -
+
+
+./make_kubernetes.sh output:
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
