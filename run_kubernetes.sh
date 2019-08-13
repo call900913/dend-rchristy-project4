@@ -10,4 +10,5 @@ echo 'Pods list:'
 kubectl get pods
 
 # Forward the container port to a host
-kubectl proxy --port=8000
+podname=$(kubectl get pods | grep -Eo '^[^ ]+' | grep klm)
+kubectl port-forward $podname 8000:80
